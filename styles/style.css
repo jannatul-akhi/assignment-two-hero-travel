@@ -3,7 +3,13 @@
 }
 
 
-header, .explore-travel-section, .popular-tour-section, .choose-destination, .choose-section, .deal-destination-section, .Travel-booking-section{
+header,
+.explore-travel-section,
+.popular-tour-section,
+.choose-destination,
+.choose-section,
+.deal-destination-section,
+.Travel-booking-section {
     width: 83%;
     margin: 0 auto;
 }
@@ -15,6 +21,10 @@ nav {
 a {
     text-decoration: none;
     color: black;
+}
+
+.hamburger {
+    display: none;
 }
 
 .logo {
@@ -81,7 +91,7 @@ a {
 .travel-place input,
 select,
 .button-primary {
-    width: 160px;
+    width: 20%;
     font-size: 16px;
     font-weight: 400;
     padding: 16px;
@@ -96,6 +106,7 @@ select,
 .button-primary {
     background-color: rgb(255, 84, 0);
     color: white;
+    width: 20%;
 }
 
 .travel-place input {
@@ -130,6 +141,10 @@ li {
 
 .popular-tour-section ul {
     list-style-type: none;
+}
+
+.popular-tour-text .button-primary {
+    width: 30%;
 }
 
 
@@ -315,7 +330,9 @@ li {
 
 .card-text-part .button-primary {
     margin: 0px;
+    width: 30%;
 }
+
 
 
 .card-container {
@@ -428,7 +445,7 @@ li {
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-    
+
 }
 
 .travel-booking-right div {
@@ -457,12 +474,13 @@ li {
 
 
 /* footer  */
-footer{
+footer {
     width: 100%;
     background-color: rgba(19, 19, 24, 0.05);
     margin: auto;
     text-align: center;
 }
+
 .footer-logo {
     display: flex;
     justify-content: center;
@@ -479,16 +497,362 @@ footer{
     padding-top: 3px;
 }
 
-footer p{
+footer p {
     font-size: 16px;
     font-weight: 400;
     color: rgb(90, 90, 93);
 }
-.right{
+
+.right {
     padding-bottom: 100px;
 }
-footer .line{
+
+footer .line {
     width: 60%;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    header,
+    .explore-travel-section,
+    .popular-tour-section,
+    .choose-destination,
+    .choose-section,
+    .deal-destination-section,
+    .Travel-booking-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        width: 90%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        width: 10%;
+        padding-top: 50px;
+    }
+
+    /* Explore Travel  */
+
+    #title {
+        font-size: 22px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .travel-title p {
+        font-size: 14px;
+        font-weight: 400;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .travel-place input,
+    select,
+    .button-primary {
+        width: 80%;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 16px;
+        border-radius: 8px;
+        border: 0px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 14px;
+        margin-left: 14px;
+    }
+
+    .travel-place input {
+        width: 70%;
+    }
+
+
+    /* Popular Tour  */
+    .popular-tour-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .travel-image img {
+        width: 100%;
+    }
+
+
+    /* Choose Your Destination  */
+    .choose-title {
+        font-size: 22px;
+        margin-top: 24px;
+    }
+
+    .choose-description {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+
+    }
+
+    .container div {
+        /* position: absolute; */
+        width: 100%;
+        height: 270px;
+    }
+
+    .one {
+        grid-column: span 12;
+        height: 100%;
+    }
+
+    .two {
+        grid-column: span 12;
+        margin-top: -40px;
+    }
+
+    .three {
+        grid-column: span 12;
+        margin-top: -80px;
+    }
+
+    .four {
+        grid-column: span 12;
+        margin-top: -70px;
+    }
+
+    .five {
+        grid-column: span 12;
+        margin-top: -5px;
+    }
+
+    .six {
+        grid-column: span 12;
+        margin-top: 5px;
+    }
+
+    .seven {
+        grid-column: span 12;
+        margin-top: 5px;
+    }
+
+    /* Why Choose Us  */
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .card div {
+        height: 230px;
+        border-radius: 16px;
+        padding: 32px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .card-one {
+        grid-column: span 6;
+        background-color: rgba(251, 181, 99, 0.05);
+
+    }
+
+    .card-two {
+        grid-column: span 6;
+        background-color: rgba(41, 206, 246, 0.2);
+    }
+
+    .card-three {
+        grid-column: span 6;
+        background-color: rgba(233, 68, 68, 0.2);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    /* Deals & Discounts  */
+
+    .deals-discount-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+
+    }
+
+    .card-div {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card-div div {
+        font-size: 14px;
+    }
+
+    #card-text-title {
+        font-size: 20px;
+    }
+
+    .card-text-part p {
+        font-size: 14px;
+    }
+
+    #price {
+        font-size: 14px;
+    }
+
+    .card-text-part .button-primary {
+        margin: 0px;
+        font-size: 14px;
+        width: 40%;
+    }
+
+    .card-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 70%;
+        padding: 15px;
+        margin: 100px 50px 40px 50px;
+        border-radius: 16px;
+    }
+
+    .deals-discount-one {
+        background-size: cover;
+    }
+
+    .deals-discount-two {
+        background-size: cover;
+    }
+
+    .deals-discount-three {
+        background-size: cover;
+    }
+
+
+    /* Booking for Travel */
+
+    .Travel-booking-section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .travel-booking-left {
+        width: 100%;
+        border: 1px solid rgb(255, 84, 0);
+        padding: 0px 10px 0px 10px;
+        border-radius: 16px;
+    }
+
+    .travel-booking-left h3 {
+        font-size: 20px;
+    }
+
+    .travel-booking-left p {
+        font-size: 14px;
+    }
+
+    .travel-booking-left input {
+        border: 0px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .btn-secondary {
+        margin-bottom: 10px;
+    }
+
+    .travel-booking-right {
+        height: 100%;
+        width: 90%;
+        background-image: url('../Images/Rectangle\ 8\ \(1\).png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        margin-top: 350px;
+
+    }
+
+    .travel-booking-right div {
+        border-radius: 16px;
+        position: absolute;
+        bottom: 345px;
+        right: 10px;
+    }
+
+
+    .travel-booking-right p {
+        font-size: 14px;
+    }
+
+    .travel-booking-right h3 {
+        margin-top: 16px;
+        font-size: 20px;
+    }
+
+    /* footer  */
+    footer {
+        margin-top: 350px;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        
+    }
+
+    .footer-logo img {
+        padding: 15px 0px 15px 0px;
+    }
+
+    .footer-logo h3 {
+        font-size: 24px;
+        font-weight: 600;
+        padding-top: 3px;
+    }
+
+    footer p {
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+
+    .right {
+        padding-bottom: 40px;
+    }
+
+    footer .line {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
 }
